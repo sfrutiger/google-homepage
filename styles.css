@@ -26,21 +26,41 @@ a:visited{
     color: inherit;
 }
 
-
+.header-li{
+    margin-right: 1.2em;
+}
 
 #top-menus{
     width:100%;
-    height: 100px;
+    height: 102px;
 }
 
 #top-menu-left{
     float:left;
     top:0;
+    margin-left: -22px;
 }
 
 #top-menu-right{
     float: right;
     top:0;
+    font-size: 13px;
+}
+
+#app-launcher{
+    height: 40px;
+    width: 40px;
+    background-color: white;
+    border-style: none;
+    border-radius: 50%;
+}
+
+#app-launcher:hover{
+    background-color: rgb(242,242,242);
+}
+
+#app-launcher-icon{
+    filter: contrast(0);
 }
 
 #sign-in {
@@ -55,6 +75,14 @@ a:visited{
     border: none;
 }
 
+@media screen and (min-width: 740px) {
+    #sign-in{
+        padding-left: 1.8em;
+        padding-right: 1.8em;
+    }
+    
+}
+
 #sign-in:hover{
     background-color: rgb(68, 123, 226);
 }
@@ -63,7 +91,7 @@ a:visited{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 #leaf{
@@ -75,7 +103,8 @@ a:visited{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2em;
-    width: 88%;
+    width: 95%;
+    max-width: 580px;
     height: 3em;
     border-style: solid;
     border-width: 1px;
@@ -85,6 +114,15 @@ a:visited{
 
 #search-bar:hover{
     box-shadow: 0px 1px 3px 1px rgb(211, 213, 217);
+}
+
+#search-icon{
+    float: left;
+    filter: contrast(0);
+    margin-top: .8em;
+    margin-left: 1em;
+    transform: scale(.8);
+    
 }
 
 input {
@@ -125,23 +163,80 @@ input {
 
 footer {
     width: 100%;
+    max-height: 140px;
     background-color: rgb( 242, 242, 242);
     position:absolute;
     bottom:0;
     text-align: center;
     color: rgb(113,117,122);
-}
-
-#footer-left{
-    float: left;
-    margin-left: 5vw;
-}
-
-#footer-right{
-    float: right;
-    margin-right: 5vw;
+    line-height: 2.2em;
+    margin-left: -8px;
 }
 
 .footer-li{
-    margin-right: 1.5em;
+    margin: 1em;
 }
+
+#footer-left{
+    float: center;
+}
+
+#footer-right{
+    float: center;
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    footer{
+        line-height: 1.4em;
+    }
+
+    
+    #footer-left{
+        padding: 0;
+        float: left;
+        width: 57.25%;
+        text-align: center;
+    }
+
+    #footer-right{
+        padding: 0;
+        float: right;
+        width: 37.75%;
+        text-align: center;
+        margin-right: 5%;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    footer {
+        line-height: 1.4em;
+    }
+
+    footer p {
+        width: 33.33333%;
+        position: absolute;
+        bottom: 0;
+        margin-left: 33vw;
+    }
+    #footer-left{
+        padding: 0;
+        float: left;
+        width: 33.33333%;
+        text-align: center;
+        margin-left: -18px;
+    }
+
+    #footer-right{
+        padding: 0;
+        float: right;
+        width: 33.3333%;
+        text-align: center;
+        margin-right: -70px;
+    }
+}
+
+
+
+
+
